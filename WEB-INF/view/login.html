@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <head>
+  <body>
+    <header>
+      <div class='header_container'>
+        <div class='header_container_menu'>
+          <div class='header_container_left'>
+            <div class='header_menu'>
+              <span id="material-icons" class="material-icons">
+                <a href="index.html" class="link">
+                  menu
+                </a>
+              </span>
+            </div>
+            <div class='header_container_logo'>
+              <img src="../../static/img/Gift_box.jpg" width="25px">
+            </div>
+          </div>
+          <div class='header_container_center'>
+            <div class="header_container_search">
+              <form action="" method="post" class = header_form_search>
+
+                    <input type="hidden" name="command" value="search" />
+                    <input name='search-name' type='text'
+                    class="input_form_search" placeholder="Search by item name"/>
+
+                </form>
+             </div>
+            <div class='header_container_select'>
+              <form action="" method="post" class = header_form_select>
+                <select class="select_item" onchange="this.form.submit()">
+                  <option class = "selected_genre_item" disabled selected>
+                    All Categories
+                  </option>
+                </select>
+              </form>
+            </div>
+            </div>
+          <div class="header_container_right">
+            <span class="material-icons">
+                favorite
+            </span>
+            <div class='header_container_bucket'>
+              <span class="material-icons">
+                  local_grocery_store
+              </span>
+            </div>
+            <div class='header_container_login'>
+              <a href="login.html" class="link">
+              Login
+            </a>
+            </div>
+            <label class="delimiter" color="grey"> | </label>
+            <div class='header_container_signup' color="grey">
+              <a href="register.html" class="link">
+              Sign Up
+            </a>
+            </div>
+          </div>
+         </div>
+        </div>
+    </header>
+    <main>
+      <section class="container_login">
+                <div class = "container_login_logo">
+                </div>
+                <div class="container_login_form">
+                    <form id="container_login_form" action="" method="post">
+                      <p>
+                        <!-- <input type="hidden" name="email" value="login" /> -->
+                        <input type="text" id="email_login" class="email_login" name="email"
+                        placeholder= "Login"/>
+
+                        <input type="password" id="password_login" class="password_login" name="password"
+                        placeholder="Password"/>
+
+                        <button type="submit" id="login" class="login"/>Login </button>
+                      </p>
+                    </form>
+                </div>
+           </section>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>

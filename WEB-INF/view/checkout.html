@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../static/css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<head>
+<body>
+  <header>
+    <div class='header_container'>
+      <div class='header_container_menu'>
+        <div class='header_container_left'>
+          <div class='header_menu'>
+            <span class="material-icons">
+              <a href="index.html" class="link">
+                menu
+              </a>
+            </span>
+          </div>
+          <div class='header_container_logo'>
+            <img src="../../static/img/Gift_box.jpg" width="25px">
+          </div>
+        </div>
+        <div class='header_container_center'>
+          <div class="header_container_search">
+            <form action="" method="post" class = header_form_search>
+
+                  <input type="hidden" name="command" value="search" />
+                  <input name='search-name' type='text'
+                  class="input_form_search" placeholder="Search by item name"/>
+
+              </form>
+           </div>
+          <div class='header_container_select'>
+            <form action="" method="post" class = header_form_select>
+              <select class="select_item" onchange="this.form.submit()">
+                <option class = "selected_genre_item" disabled selected>
+                  All Categories
+                </option>
+              </select>
+            </form>
+          </div>
+          </div>
+        <div class="header_container_right">
+          <span class="material-icons">
+              favorite
+          </span>
+          <div class='header_container_bucket'>
+            <span class="material-icons">
+                local_grocery_store
+            </span>
+          </div>
+          <div class='header_container_login'>
+            <a href="login.html" class="link">
+            Login
+          </a>
+          </div>
+          <label class="delimiter" color="grey"> | </label>
+          <div class='header_container_signup' color="grey">
+            <a href="register.html" class="link">
+            Sign Up
+          </a>
+          </div>
+        </div>
+       </div>
+      </div>
+  </header>
+  <main>
+    <div class = "container_checkout_header">
+      Checkout
+    </div>
+    <section class="container_checkout">
+              <div class="container_checkout_form">
+                    <form action="" method="post" class="container_checkout_post">
+<!-- 1 item -->
+                        <div class="container_checkout_line">
+                          <div class="container_checkout_image">
+                            <img id="checkout_image" class="checkout_image">
+
+                          </div >
+                          <div class="container_checkout_description">
+                            <p id="checkout_description_header" class="checkout_description_header">
+
+                            </p>
+                            <p id="checkout_description_text" class="checkout_description_text">
+
+                          </div>
+                          <div id="container_checkout_price" class="container_checkout_price">
+
+                          </div>
+                        </div>
+
+
+                        <div class="container_checkout_total_line">
+                          <div class="container_checkout_total">
+                            Total
+                          </div>
+                          <div id="container_checkout_total_sum" class="container_checkout_total_sum">
+
+                          </div>
+                        </div>
+
+
+                      <div class='checkout_form_row_last'>
+                          <div class="form_row_cancel_checkout">
+                            <button type="cancel"  class="checkout_button_back">
+                                <a id="checkout_button_back" href="coupon_info.html"> Back  </a>
+                                </button>
+                          </div>
+                          <div class="form_row_checkout">
+                            <button type="submit" class="checkout_button" value="Submit">Checkout</button>
+                          </div>
+                      </div>
+                     </form>
+              </div>
+         </section>
+  </main>
+  <script src="checkout.js"></script>
+  </body>
+</html>

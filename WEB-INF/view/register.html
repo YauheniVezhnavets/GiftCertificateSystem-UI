@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../static/css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<head>
+<body>
+  <header>
+    <div class='header_container'>
+      <div class='header_container_menu'>
+        <div class='header_container_left'>
+          <div class='header_menu'>
+            <span "material-icons" class="material-icons">
+              <a href="index.html" class="link">
+                menu
+              </a>
+            </span>
+          </div>
+          <div class='header_container_logo'>
+            <img src="../../static/img/Gift_box.jpg" width="25px">
+          </div>
+        </div>
+        <div class='header_container_center'>
+          <div class="header_container_search">
+            <form action="" method="post" class = header_form_search>
+
+                  <input type="hidden" name="command" value="search" />
+                  <input name='search-name' type='text'
+                  class="input_form_search" placeholder="Search by item name"/>
+
+              </form>
+           </div>
+          <div class='header_container_select'>
+            <form action="" method="post" class = header_form_select>
+              <select class="select_item" onchange="this.form.submit()">
+                <option class = "selected_genre_item" disabled selected>
+                  All Categories
+                </option>
+              </select>
+            </form>
+          </div>
+          </div>
+        <div class="header_container_right">
+          <span class="material-icons">
+              favorite
+          </span>
+          <div class='header_container_bucket'>
+            <span class="material-icons">
+                local_grocery_store
+            </span>
+          </div>
+          <div class='header_container_login'>
+            <a href="login.html" class="link">
+            Login
+          </a>
+          </div>
+          <label class="delimiter" color="grey"> | </label>
+          <div class='header_container_signup' color="grey">
+            <a href="register.html" class="link">
+            Sign Up
+          </a>
+          </div>
+        </div>
+       </div>
+      </div>
+  </header>
+  <main>
+    <section class="container_register">
+              <div class="container_register_form">
+                <div class = "container_register_header">
+                  Register
+                </div>
+                  <div id="container_register_fill" class="container_register_fill">
+                    <form action="" method="post" id="container_register_post" class="container_register_post">
+
+                      <div class='register_form_row'>
+                          <label for='first_name'>First Name</label>
+                          <input class='first_name' id='first_name' name='first_name' type='text'/>
+                      </div>
+                      <div class='register_form_row'>
+                          <label for='last_name'>Last Name</label>
+                          <input class='last_name'id='last_name' name='last_name' type='text'/>
+                      </div>
+                      <div class='register_form_row'>
+                          <label for='password'>Password</label>
+                          <input class='password' id='password_register' name='password' type='password'/>
+                      </div>
+                      <div class='register_form_row'>
+                          <label for='repeat_password'>Repeat Password</label>
+                          <input id='repeat_password' class='repeat_password' name='repeat_password' type='password'/>
+                          <span id='message'></span>
+                      </div>
+                      <div class='register_form_row'>
+                          <label for='email'>Email</label>
+                          <input id='email_register' class='email' name='email_register' type='text'/>
+                      </div>
+                      <div class='register_form_row'>
+                          <label for='address'>Address</label>
+                          <input class='address' id='address' name='address' type='text'/>
+                      </div>
+                      <div class='register_form_row'>
+                      </div>
+                      <div class='register_form_row_last'>
+                          <div class="form_row_cancel">
+                              <button type="cancel" class="button_cancel" onclick="register.html">Cancel</button>
+                          </div>
+                          <div class="form_row_sign_up">
+                            <button type="submit" class="button_sign_up" value="Submit">Sign Up</button>
+                          </div>
+                      </div>
+                     </form>
+                  </div>
+              </div>
+         </section>
+  </main>
+  <script src="register.js"></script>
+  </body>
+</html>
