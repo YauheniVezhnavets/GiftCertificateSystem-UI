@@ -1,0 +1,709 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+body {
+  background-color: #F0F0ED;
+  background-attachment: scroll;
+  display: block;
+}
+
+header{
+  width: 100%;
+}
+
+input {
+  text-align: center;
+}
+
+/* Header styles start */
+
+.header_container {
+  display: flex;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 70px;
+}
+
+.header_container_menu {
+  display: flex;
+  width: 98%;
+  height: 35px;
+  justify-content: space-between;
+}
+
+.header_container_left{
+  display: flex;
+  justify-content: space-around;
+}
+
+.header_container_center{
+  display: flex;
+  justify-content: center;
+}
+
+.header_container_right{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.select_item{
+  width: 120px;
+  height: 35px;
+  border: 2px solid #C8C3C3;
+}
+
+.header_container_search,
+.header_form_search{
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 35px;
+}
+
+.input_form_search{
+  display: flex;
+  justify-content: center;
+  border: 2px solid #C8C3C3;
+  width: 400px;
+  height: 35px;
+}
+
+
+.header_form_select{
+  width: auto;
+}
+
+.delimiter{
+  margin-left: 3px;
+  margin-right: 3px;
+  color: grey;
+}
+
+.material-icons{
+  color: grey;
+  margin-right: 5px;
+}
+
+.header_container_signup, .header_container_login{
+  color: grey;
+}
+
+.link{
+  color: grey;
+  text-decoration: none;
+}
+
+
+/* Header styles end */
+
+
+/* Login styles start */
+
+.container_login{
+  padding-top: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_login_logo{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/Gift_box.jpg);
+    border-radius: 150px;
+    border: 2px solid #C8C3C3;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+.container_login_form{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 350px;
+  height: 270px;
+  background-color: #FDFDFD;
+  flex-wrap: wrap;
+  margin-top: -100px;
+  z-index: 1;
+}
+
+.email_login{
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.password_login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 40px;
+  background-color: #7FF893;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Login styles end */
+
+
+/* Register styles start */
+
+.container_register{
+  margin-top: 50px;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_register_form{
+  width: 600px;
+  height: 350px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: white;
+}
+
+.container_register_header{
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 100%;
+  height: 50px;
+  background-color: #C1C3C1;
+  display: flex;
+  font-size: 30px;
+  color: white;
+}
+
+.container_register_fill{
+  width: 100%;
+  height: 100%;
+}
+
+.container_register_post{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+
+
+.register_form_row{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  width: 270px;
+  height: 50px;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+.register_form_row_last{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  font-size: 18px;
+  width: 270px;
+  height: 50px;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+.first_name, .last_name, .email, .password, .repeat_password, .address{
+  display: flex;
+  height: 30px;
+  border: 1px #c2d1df solid;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.form_row_cancel, .form_row_sign_up {
+  width: 130px;
+  display: flex;
+  flex-direction: row;
+}
+
+.button_sign_up{
+  display: flex;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #7FF893;
+  border-color: #7FF893;
+  color: white;
+  margin-left: 5px;
+}
+
+.button_cancel{
+  display: flex;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px #c2d1df solid;
+  margin-right: 5px;
+}
+
+/* Register styles end */
+
+/* Coupon add styles end */
+
+.container_add_coupon_header{
+  width: 100%;
+  height: 50px;
+  background-color: #C1C3C1;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  padding-left: 18%;
+}
+
+.container_add_coupon{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+}
+
+.container_add_cupon_form{
+  width: 68%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.container_add_coupon_post{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+
+.add_coupon_form_row{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  width: 45%;
+  height: 60px;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+.add_coupon_big_form_row{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  width: 45%;
+  height: 120px;
+  justify-content: space-around;
+}
+
+.add_coupon_small_row{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  width: 100%;
+  height: 60px;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+
+.coupon_form_row_last{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+  font-size: 18px;
+  width: 45%;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.company, .item_name{
+  display: flex;
+  height: 30px;
+  border: 1px #c2d1df solid;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.category, .duration, .price,.images {
+  display: flex;
+  height: 30px;
+  border: 1px #c2d1df solid;
+  font-size: 18px;
+  padding-left: 5px;
+  width: 100%;
+}
+
+.short_description, .long_description{
+  height: 100px;
+  border: 1px #c2d1df solid;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.form_row_cancel, .form_row_sign_up{
+  display: flex;
+  width: 140px;
+}
+
+.button_save{
+  display: flex;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #7FF893;
+  border-color: #7FF893;
+  color: white;
+  margin-left: 15px;
+}
+
+.button_back{
+  display: flex;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px #c2d1df solid;
+}
+
+/* Coupon add styles end */
+
+/* Checkout styles start */
+
+.container_checkout_header{
+  width: 100%;
+  height: 50px;
+  background-color: #C1C3C1;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  padding-left: 18%;
+}
+
+
+.container_checkout{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+}
+
+.container_checkout_form{
+  width: 65%;
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+}
+
+
+.container_checkout_post{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+
+.container_checkout_line{
+  display: flex;
+  width: 100%;
+  height: 90px;
+  margin-top: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.container_checkout_total_line{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  border-top: 1px black solid;
+  justify-content: flex-end;
+}
+
+
+.container_checkout_image{
+  display: flex;
+  width: 15%;
+  height: 100%;
+}
+
+.container_checkout_description{
+  width: 60%;
+  align-items: flex-start;
+  margin-left: 5%;
+  height: 100%;
+  /* word-wrap: break-word; */
+}
+
+.checkout_description_header{
+  font-size: 25px;
+  height: 20%;
+  margin-bottom: 20px;
+}
+
+.checkout_description_text{
+  font-size: 14px;
+  width: 100%;
+  height: 50%
+
+  /* word-wrap: break-word; */
+}
+
+.container_checkout_price{
+  display: flex;
+  width: 15%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_checkout_total_sum{
+  display: flex;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_checkout_total{
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout_image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.checkout_form_row_last{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+  font-size: 18px;
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.form_row_cancel_checkout, .form_row_checkout{
+  display: flex;
+  width: 20%;
+}
+
+.checkout_button_back{
+  display: flex;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px #c2d1df solid;
+  font-size: 18px;
+}
+
+.checkout_button{
+  display: flex;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #7FF893;
+  border-color: #7FF893;
+  color: white;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+/* Checkout add styles end */
+
+/* Coupon info styles start */
+
+
+.continer_for_coupon-info{
+  display: flex;
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.container_for_image_coupon{
+  display: flex;
+  width: 60%;
+  height: 350px;
+}
+
+.illustration_coupon{
+  width: 100%;
+}
+
+
+.container_for_coupon_information{
+  flex-flow: column;
+  justify-content: space-between;
+  display: flex;
+  width: 25%;
+  height: 350px;
+  background-color: white;
+  margin-left: 10%;
+}
+
+
+.container_for_coupon_description{
+  display: flex;
+  width: 60%;
+  height: 150px;
+  margin-top: 3%;
+  flex-direction: column;
+}
+
+.item_detailed_description_header{
+  font-size: 36px;
+  font-style: normal;
+}
+
+.item_detailed_description{
+  font-size: 18px;
+  font-style: normal;
+}
+
+.coupon_information_purchase_details{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.coupon_information_cost{
+  display: flex;
+}
+
+.coupon_information_add_to_checkout{
+  display: flex;
+  font-size: 18px;
+  background-color: white;
+  border-color: white;
+  align-items: center;
+}
+
+
+.add_to_cart_button{
+  background-color: white;
+  color:blue;
+  border-color: white;
+  font-size: 18px;
+}
+/*
+.coupon_information_small_description{
+  display: flex;
+  margin-right: 20px;
+} */
+
+
+.tag_container{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #C1C3C1;
+}
+
+.tag_elements{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tag{
+  display: flex;
+  width: 9%;
+  height: 80px;
+}
+
+.tag_image{
+  width: 100%;
+}
+
+.certificate_elements{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+.certificate{
+  margin: 1%;
+}
+
+.block {
+     color: red;
+    font-weight:bold;
+}
+
+.rotated {
+     color: green;
+    font-weight:bold;
+}

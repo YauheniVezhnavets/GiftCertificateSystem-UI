@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../static/css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<head>
+<body>
+  <header>
+    <div class='header_container'>
+      <div class='header_container_menu'>
+        <div class='header_container_left'>
+          <div class='header_menu'>
+            <span class="material-icons">
+              <a href="index.html" class="link">
+                menu
+              </a>
+            </span>
+          </div>
+          <div class='header_container_logo'>
+            <img src="../../static/img/Gift_box.jpg" width="25px">
+          </div>
+        </div>
+        <div class='header_container_center'>
+          <div class="header_container_search">
+            <form action="" method="post" class = header_form_search>
+
+                  <input type="hidden" name="command" value="search" />
+                  <input name='search-name' type='text'
+                  class="input_form_search" placeholder="Search by item name"/>
+
+              </form>
+           </div>
+          <div class='header_container_select'>
+            <form action="" method="post" class = header_form_select>
+              <select class="select_item" onchange="this.form.submit()">
+                <option class = "selected_genre_item" disabled selected>
+                  All Categories
+                </option>
+              </select>
+            </form>
+          </div>
+          </div>
+        <div class="header_container_right">
+          <span class="material-icons">
+              favorite
+          </span>
+          <div class='header_container_bucket'>
+            <span class="material-icons">
+                local_grocery_store
+            </span>
+          </div>
+          <div class='header_container_login'>
+            <a href="login.html" class="link">
+            Login
+          </a>
+          </div>
+          <label class="delimiter" color="grey"> | </label>
+          <div class='header_container_signup' color="grey">
+            <a href="register.html" class="link">
+            Sign Up
+          </a>
+          </div>
+        </div>
+       </div>
+      </div>
+  </header>
+  <main>
+    <section class="continer_for_coupon-info">
+      <div class="container_for_image_coupon">
+        <img id='illustration_coupon' class='illustration_coupon'
+        src='../../static/img/Gift_box.jpg'
+         style='max-width: 1000px' style='max-height: 400px' />
+      </div>
+      <div class="container_for_coupon_information">
+
+        <div class="coupon_information_small_description">
+          <p id ="item_detailed_description_header_small" class="item_detailed_description_header_small">
+            Coupan Name
+          </p>
+          <br/>
+          <p id="item_detailed_description_small" class="item_detailed_description_small">
+            <!-- Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. -->
+          </p>
+        </div>
+        <div class="coupon_information_purchase_details">
+          <p id="coupon_information_cost" class="coupon_information_cost">
+            $200
+          </p>
+
+          <div class="coupon_information_add_to_checkout">
+            <a id ="add_to_cart_button"  href="checkout.html" class="add_to_cart_button"> Add to Cart  </a>
+            <span class="material-icons">
+                local_grocery_store
+            </span>
+          </div>
+
+        </div>
+      </div>
+      <div class="container_for_coupon_description">
+        <p class="item_detailed_description_header">
+          <!-- Item Detailed Description -->
+        </p>
+        <br/>
+        <p id="item_detailed_description" class="item_detailed_description">
+          <!-- Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book. -->
+        </p>
+
+      </div>
+    </section>
+  </main>
+  <script src="coupon.js"></script>
+</body>
+</html>

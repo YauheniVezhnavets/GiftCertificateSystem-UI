@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../static/css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+<head>
+<body>
+  <header>
+    <div class='header_container'>
+      <div class='header_container_menu'>
+        <div class='header_container_left'>
+          <div class='header_menu'>
+            <span class="material-icons">
+              <a href="index.html" class="link">
+                menu
+              </a>
+            </span>
+          </div>
+          <div class='header_container_logo'>
+            <img src="../../static/img/Gift_box.jpg" width="25px">
+          </div>
+        </div>
+        <div class='header_container_center'>
+          <div class="header_container_search">
+            <form action="" method="post" class = header_form_search>
+
+                  <input type="hidden" name="command" value="search" />
+                  <input name='search-name' type='text'
+                  class="input_form_search" placeholder="Search by item name"/>
+
+              </form>
+           </div>
+          <div class='header_container_select'>
+            <form action="" method="post" class = header_form_select>
+              <select class="select_item" onchange="this.form.submit()">
+                <option class = "selected_genre_item" disabled selected>
+                  All Categories
+                </option>
+              </select>
+            </form>
+          </div>
+          </div>
+        <div class="header_container_right">
+          <span class="material-icons">
+              favorite
+          </span>
+          <div class='header_container_bucket'>
+            <span class="material-icons">
+                local_grocery_store
+            </span>
+          </div>
+          <div class='header_container_login'>
+            <a href="login.html" class="link">
+            Login
+          </a>
+          </div>
+          <label class="delimiter" color="grey"> | </label>
+          <div class='header_container_signup' color="grey">
+            <a href="register.html" class="link">
+            Sign Up
+          </a>
+          </div>
+        </div>
+       </div>
+      </div>
+  </header>
+    <main>
+      <div class = "container_add_coupon_header">
+        Add New Coupon
+      </div>
+      <section class="container_add_coupon">
+                <div class="container_add_cupon_form">
+
+                      <form action="" method="post" class="container_add_coupon_post">
+
+                        <div class='add_coupon_form_row'>
+                            <label for='company'>Company</label>
+                            <input class='company' name='company' type='text'/>
+                        </div>
+                        <div class='add_coupon_form_row'>
+                            <label for='item_name'>Item Name</label>
+                            <input class='item_name' name='item_name' type='text'/>
+                        </div>
+                        <div class='add_coupon_big_form_row'>
+                          <div class='add_coupon_small_form_row'>
+                              <label for='category'>Category</label>
+                              <input class='category' name='category' type='text'/>
+                          </div>
+                          <div class='add_coupon_small_form_row'>
+                              <label for='duration'>Duration</label>
+                              <input class='duration' name='duration' type='number'/>
+                          </div>
+                        </div>
+                        <div class='add_coupon_big_form_row'>
+                            <label for='short_description'>Short description</label>
+                            <input class='short_description' name='short_description' type='textarea'/>
+                        </div>
+                        <div class='add_coupon_big_form_row'>
+                          <div class='add_coupon_small_form_row'>
+                              <label for='price'>Price</label>
+                              <input class='price' name='price' type='text'/>
+                          </div>
+                          <div class='add_coupon_small_form_row'>
+                              <label for='images'>Images</label>
+                              <input class='images' name='images' type='text'/>
+                          </div>
+                        </div>
+                        <div class='add_coupon_big_form_row'>
+                            <label for='long_description'>Long description</label>
+                            <input class='long_description' name='long_description' type='textarea'/>
+                        </div>
+                        <div class='add_coupon_form_row'>
+                        </div>
+                        <div class='coupon_form_row_last'>
+                            <div class="form_row_cancel">
+                                <button type="cancel" class="button_back" onclick="">Back</button>
+                            </div>
+                            <div class="form_row_sign_up">
+                              <button type="submit" class="button_save" value="Submit">Save</button>
+                            </div>
+                        </div>
+                       </form>
+                    </div>
+           </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../static/css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<head>
+<body>
+  <header>
+    <div class='header_container'>
+      <div class='header_container_menu'>
+        <div class='header_container_left'>
+          <div class='header_menu'>
+            <span class="material-icons">
+              <a href="index.html" class="link">
+                menu
+              </a>
+            </span>
+          </div>
+          <div class='header_container_logo'>
+            <img src="../../static/img/Gift_box.jpg" width="25px">
+          </div>
+        </div>
+        <div class='header_container_center'>
+          <div class="header_container_search">
+            <form action="" method="post" class = header_form_search>
+
+                  <input type="hidden" name="command" value="search" />
+                  <input id='search-name' name='search-name' type='text'
+                  class="input_form_search" placeholder="Search by item name"/>
+
+              </form>
+           </div>
+          <div class='header_container_select'>
+            <form action="" method="post" id="header_form_select" class ="header_form_select">
+              <select id="select_item" class="select_item" onchange="this.form.submit()">
+                <option class = "selected_genre_item" disabled selected>
+                  All Categories
+                </option>
+              </select>
+            </form>
+          </div>
+          </div>
+        <div class="header_container_right">
+          <span class="material-icons">
+              favorite
+          </span>
+          <div class='header_container_bucket'>
+            <span class="material-icons">
+                local_grocery_store
+            </span>
+          </div>
+          <div class='header_container_login'>
+            <a href="login.html" class="link">
+            Login
+          </a>
+          </div>
+          <label class="delimiter" color="grey"> | </label>
+          <div class='header_container_signup' color="grey">
+            <a href="register.html" class="link">
+            Sign Up
+          </a>
+          </div>
+        </div>
+       </div>
+      </div>
+  </header>
+    <main>
+        <div id="tag_container" class="tag_container">
+          <div id="tag_elements" class="tag_elements">
+
+          </div>
+        </div>
+        <div id="certificate_container" class="certificate_container">
+
+        </div>
+
+    </main>
+    <script src="certificate.js"></script>
+  </body>
+</html>
